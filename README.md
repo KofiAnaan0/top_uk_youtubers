@@ -30,7 +30,7 @@ SELECT
     total_videos
 
 FROM
-   youtubers_influencers_uk```
+   youtubers_influencers_uk
 
 ### 2. Data Transformation
 After cleaning the data, SQL was utilized to transform the data into a format suitable for analysis. A SQL view was created to streamline this process.
@@ -56,7 +56,6 @@ SELECT
 -- 3.
 FROM
     youtubers_influencers_uk
-```
 
 ### 3. Data Validation: The cleaned & transformed data was tested to ensure it met the required criteria:
   - 4 columns
@@ -73,7 +72,7 @@ FROM
 SELECT
     COUNT(*) AS no_of_rows
 FROM
-    view_youtubers_influencers_uk;```
+    view_youtubers_influencers_uk;
 
 *2.Column count check:*
 ```/*
@@ -86,7 +85,7 @@ SELECT
 FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
-    TABLE_NAME = 'view_youtubers_influencers_uk';```
+    TABLE_NAME = 'view_youtubers_influencers_uk';
 
 *3.Data type check:*
 ```/*
@@ -100,7 +99,7 @@ SELECT
 FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
-    TABLE_NAME = 'view_youtubers_influencers_uk';```
+    TABLE_NAME = 'view_youtubers_influencers_uk';
 
 *4.Duplicate count check:*
 ```/*
@@ -122,7 +121,7 @@ GROUP BY
 
 -- 3.
 HAVING
-    COUNT(*) > 1;```
+    COUNT(*) > 1;
 
 ### 4. Data Visualization
 The transformed data was connected to Power BI for visualization. The visualization helped identify key trends and insights regarding the top YouTubers in the UK.
@@ -181,7 +180,7 @@ WHERE
 
 -- 5.  
 ORDER BY
-	net_profit DESC```
+	net_profit DESC
 
 ## Conclusion
 Based on the viewershp and views per subscriber, Dan Rhodes appears to be the best option to advance with because there's a higher return on investment with Dan Rhodes compared to the other channels.

@@ -31,6 +31,7 @@ SELECT
 
 FROM
    youtubers_influencers_uk
+```
 
 ### 2. Data Transformation
 After cleaning the data, SQL was utilized to transform the data into a format suitable for analysis. A SQL view was created to streamline this process.
@@ -56,6 +57,7 @@ SELECT
 -- 3.
 FROM
     youtubers_influencers_uk
+```
 
 ### 3. Data Validation: The cleaned & transformed data was tested to ensure it met the required criteria:
   - 4 columns
@@ -65,7 +67,8 @@ FROM
 
 *SQL Code for Data Validation:*
 *1.Row count check:*
-```/*
+```sql
+/*
 # Count the total number of records (or rows) are in the SQL view
 */
 
@@ -73,6 +76,7 @@ SELECT
     COUNT(*) AS no_of_rows
 FROM
     view_youtubers_influencers_uk;
+```
 
 *2.Column count check:*
 ```/*

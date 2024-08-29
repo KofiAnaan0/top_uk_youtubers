@@ -78,7 +78,8 @@ FROM
 ```
 
 *2.Column count check:*
-```/*
+```sql
+/*
 # Count the total number of columns (or fields) are in the SQL view
 */
 
@@ -88,6 +89,7 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
     TABLE_NAME = 'view_youtubers_influencers_uk';
+```
 
 *3.Data type check:*
 ```sql

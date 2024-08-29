@@ -135,7 +135,7 @@ HAVING
 The transformed data was connected to Power BI for visualization. The visualization helped identify key trends and insights regarding the top YouTubers in the UK.
 
 *Power BI Visualization:*  
-![Power BI Visualization](link_to_your_gif.gif)  
+![GIF of Power BI Dashboard](assets/images/top_uk_youtubers_2024.gif) 
 *I will add the Power BI GIF here.*
 
 ### 4. Data Analysis

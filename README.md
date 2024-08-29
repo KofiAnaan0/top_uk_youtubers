@@ -21,7 +21,6 @@ The first stage involved cleaning the dataset to ensure that only relevant and a
 # 1. Select the required columns
 # 2. Extract the channel name from the 'NOMBRE' column
 */
-
 -- 1.
 SELECT
     SUBSTRING(NOMBRE, 1, CHARINDEX('@', NOMBRE) -1) AS channel_name,  -- 2.
@@ -83,7 +82,6 @@ FROM
 # Count the total number of columns (or fields) are in the SQL view
 */
 
-
 SELECT
     COUNT(*) AS column_count
 FROM
@@ -92,7 +90,8 @@ WHERE
     TABLE_NAME = 'view_youtubers_influencers_uk';
 
 *3.Data type check:*
-```/*
+```sql
+/*
 # Check the data types of each column from the view by checking the INFORMATION SCHEMA view
 */
 
@@ -104,9 +103,11 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
     TABLE_NAME = 'view_youtubers_influencers_uk';
+```
 
 *4.Duplicate count check:*
-```/*
+```sql
+/*
 # 1. Check for duplicate rows in the view
 # 2. Group by the channel name
 # 3. Filter for groups with more than one row
@@ -126,6 +127,7 @@ GROUP BY
 -- 3.
 HAVING
     COUNT(*) > 1;
+```
 
 ### 4. Data Visualization
 The transformed data was connected to Power BI for visualization. The visualization helped identify key trends and insights regarding the top YouTubers in the UK.
@@ -138,16 +140,14 @@ The transformed data was connected to Power BI for visualization. The visualizat
 Finally, the data was analyzed using both SQL and Excel. This analysis provided actionable insights for the client, aiding in the decision-making process for selecting the best YouTube channels for marketing campaigns.
 
 *SQL Code for Data Analysis:*  
-```/* 
-
+```sql
+/* 
 # 1. Define variables 
 # 2. Create a CTE that rounds the average views per video 
 # 3. Select the column you need and create calculated columns from existing ones 
 # 4. Filter results by Youtube channels
 # 5. Sort results by net profits (from highest to lowest)
-
 */
-
 
 -- 1. 
 DECLARE @conversionRate FLOAT = 0.02;		-- The conversion rate @ 2%
@@ -185,6 +185,7 @@ WHERE
 -- 5.  
 ORDER BY
 	net_profit DESC
+```
 
 ## Conclusion
 Based on the viewershp and views per subscriber, Dan Rhodes appears to be the best option to advance with because there's a higher return on investment with Dan Rhodes compared to the other channels.
